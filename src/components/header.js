@@ -1,42 +1,91 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+import Logo from "../images/logo.png"
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.toggle = this.toggle.bind(this)
+    this.state = {
+      isOpen: false,
+    }
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    })
+  }
+  render() {
+    return (
+      <div>
+        <Navbar
+          color="light"
+          style={{ fontFamily: "montserrat" }}
+          light
+          expand="md"
+          fixed="top"
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+          <NavbarBrand href="/">
+            <img src={Logo} alt="loudspeaker" />
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/whoweare">Who we are</NavLink>
+              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  Services
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>Digital Marketing</DropdownItem>
+                  <DropdownItem divider /> <DropdownItem>Branding</DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>Printing</DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>Market Research</DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+              <NavItem>
+                <NavLink href="/">Insight</NavLink>
+              </NavItem>
 
-Header.defaultProps = {
-  siteTitle: ``,
+              <NavItem>
+                <NavLink href="/">Rebel</NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink href="/">Reviews</NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink href="/">Resources</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    )
+  }
 }
 
 export default Header
