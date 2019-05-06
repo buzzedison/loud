@@ -35,7 +35,7 @@ a:hover {
   background: -moz-linear-gradient(
     45deg,
     rgba(213, 15, 61, 0.6),
-    rgba(13, 17, 198, 0.69) 100%
+    rgba(6, 173, 240, 0.69) 100%
   );
   background: -webkit-linear-gradient(
     45deg,
@@ -52,7 +52,9 @@ a:hover {
 #videobackground .view video {
   top: 0 !important;
   left: 0 !important;
+  right: 0 !important;
   transform: none !important;
+
   height: 100vh;
 }
 
@@ -60,15 +62,14 @@ a:hover {
   right: 0;
   bottom: 0;
   position: fixed;
-  min-width: 100%;
 }
 
 .main {
   position: relative;
   background-color: #ffffff;
-
-  min-width: 100%;
-  padding: 40px;
+  margin-top: 20px;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
 }
 
 .digital {
@@ -82,7 +83,13 @@ a:hover {
 }
 
 .introText {
-  position: relative;
-  padding: 60px;
+  padding: 0;
+  margin: 0;
   text-align: center;
+  position: fixed;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
 }

@@ -33,14 +33,14 @@ class Header extends React.Component {
     return (
       <div>
         <Navbar
-          color="light"
+          color="white"
           style={{ fontFamily: "montserrat" }}
           light
           expand="md"
           fixed="top"
         >
           <NavbarBrand href="/">
-            <img src={Logo} alt="loudspeaker" />
+            <img style={{ width: "70%" }} src={Logo} alt="loudspeaker" />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
