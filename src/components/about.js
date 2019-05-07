@@ -126,7 +126,7 @@ const About = () => {
                       fontSize: "40px",
                     }}
                   >
-                    Creative marketing solutions since 2010.
+                    Creative marketing solutions since 2014.
                   </MDBCardTitle>
 
                   <MDBCard
