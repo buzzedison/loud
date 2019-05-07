@@ -10,10 +10,16 @@ import {
   MDBView,
   MDBMask,
   MDBCarouselInner,
+  MDBIcon,
+  MDBCardTitle,
+  MDBCardBody,
+  MDBCardText,
+  MDBCard,
 } from "mdbreact"
 import DELA from "../images/267.jpg"
 import DELA2 from "../images/269.jpg"
 import MEDIA from "../images/267.jpg"
+
 const About = () => {
   return (
     <MDBContainer className="mt-5 text-center" fluid>
@@ -92,6 +98,71 @@ const About = () => {
             </MDBCarouselInner>
           </MDBCarousel>
         </MDBCol>
+      </MDBRow>
+      <MDBRow>
+        <center>
+          <MDBCol sm={8}>
+            <h2 className="h2 display-5">
+              {" "}
+              We’re a diverse team of designers, developers, marketers, and
+              creatives who are passionate about innovation, new companies, and
+              new challenges.
+            </h2>
+          </MDBCol>
+
+          <MDBCol sm={6}>
+            <MDBJumbotron className="responsive" style={{ padding: 0 }}>
+              <MDBCol
+                className="text-white text-center py-5 px-4 my-5"
+                style={{
+                  backgroundColor: "#FE9C54 ",
+                }}
+              >
+                <MDBCol className="py-5">
+                  <MDBCardTitle
+                    className="h1-responsive display-2 pt-3 m-3 font-bold"
+                    style={{
+                      fontWeight: "900px",
+                      fontSize: "40px",
+                    }}
+                  >
+                    Creative marketing solutions since 2010.
+                  </MDBCardTitle>
+
+                  <MDBCard
+                    className="aboutCard"
+                    style={{
+                      width: "50rem",
+                      height: "20rem",
+                      backgroundColor: "black",
+                      boxShadow: "grey 10px 10px",
+                    }}
+                  >
+                    <MDBCardBody>
+                      <MDBCardTitle>
+                        <h2 display-4 style={{ padding: "30px" }}>
+                          Ideation. Production. Action
+                        </h2>
+                      </MDBCardTitle>
+                      <MDBCardText
+                        grey-text
+                        style={{ textAlign: "left", padding: "20px" }}
+                      >
+                        We are passionate about the endless opportunities that
+                        digital offers brands today.{" "}
+                        <p>
+                          It’s a world where we can pair the right message and
+                          idea to the right audience at the right time.
+                        </p>{" "}
+                        What a time to be alive in marketing.
+                      </MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+              </MDBCol>
+            </MDBJumbotron>
+          </MDBCol>
+        </center>
       </MDBRow>
     </MDBContainer>
   )
