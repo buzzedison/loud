@@ -72,7 +72,7 @@ const Digital = () => {
                 pitching digital marketing strategies for real clients, in an
                 agency-style environment.
               </p>
-              <MDBBtn lg color="dark">
+              <MDBBtn lg color="dark" href="/form">
                 APPLY NOW!
               </MDBBtn>
             </MDBCol>
