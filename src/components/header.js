@@ -53,7 +53,7 @@ class Header extends React.Component {
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Services
+                  <NavLink href="/services"> Services</NavLink>
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>Digital Marketing</DropdownItem>
