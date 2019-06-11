@@ -22,7 +22,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-netlify-form": "^2.1.5",
-    "reactstrap": "^8.0.0"
+    "reactstrap": "^8.0.0",
+    "styled-components": "^4.3.1"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
