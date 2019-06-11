@@ -51,19 +51,11 @@ class Header extends React.Component {
               <NavItem>
                 <NavLink href="/whoweare">Who we are</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  <NavLink href="/services"> Services</NavLink>
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Digital Marketing</DropdownItem>
-                  <DropdownItem divider /> <DropdownItem>Branding</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Printing</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Market Research</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+
+              <NavItem>
+                {" "}
+                <NavLink href="/services"> Services</NavLink>{" "}
+              </NavItem>
 
               <NavItem>
                 <NavLink href="/">Insight</NavLink>
