@@ -11,7 +11,7 @@ const Head = styled.h1`
 `
 
 const Image = styled.div`
-  padding-top: 40px;
+  padding-top: 60px;
 `
 const Research = () => {
   return (
@@ -23,7 +23,10 @@ const Research = () => {
             <img src={REBEL} />
           </center>
         </Image>
-        <Head>World-class market research services.</Head>
+        <center>
+          {" "}
+          <Head>World-class market research services.</Head>
+        </center>
         <p className="lead black-text w-responsive text-center mx-auto mb-5">
           Identify and study consumers, their reactions to and preferences for
           specific products & services Understand your target market, your
