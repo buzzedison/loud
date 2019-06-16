@@ -7,10 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from "reactstrap"
 
 import Logo from "../images/logo.png"
@@ -58,11 +54,11 @@ class Header extends React.Component {
               </NavItem>
 
               <NavItem>
-                <NavLink href="/">Insight</NavLink>
+                <NavLink href="/insight">Insight</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="/">Rebel</NavLink>
+                <NavLink href="/rebel">Rebel</NavLink>
               </NavItem>
 
               <NavItem>
