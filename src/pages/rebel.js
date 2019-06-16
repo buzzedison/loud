@@ -11,7 +11,7 @@ const Head = styled.h1`
 `
 
 const Image = styled.div`
-  padding-top: 60px;
+  padding-top: 80px;
 `
 const Research = () => {
   return (
